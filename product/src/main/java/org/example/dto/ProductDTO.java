@@ -6,6 +6,7 @@ public class ProductDTO {
     private String name;
     private String description;
     private BigDecimal price;
+    private String discountCode;
 
     public String getName() {
         return name;
@@ -29,5 +30,13 @@ public class ProductDTO {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getDiscountCode() {
+        return discountCode;
+    }
+
+    public void setDiscountCode(String discountCode) {
+        this.discountCode = discountCode;
     }
 }

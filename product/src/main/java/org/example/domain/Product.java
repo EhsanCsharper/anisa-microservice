@@ -16,6 +16,8 @@ public class Product {
     private String description;
     @Column
     private BigDecimal price;
+    @Transient
+    private String discountCode;
 
     public Long getId() {
         return id;
@@ -47,5 +49,13 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getDiscountCode() {
+        return discountCode;
+    }
+
+    public void setDiscountCode(String discountCode) {
+        this.discountCode = discountCode;
     }
 }
