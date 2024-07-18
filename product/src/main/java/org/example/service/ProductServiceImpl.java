@@ -1,18 +1,20 @@
 package org.example.service;
 
+import org.example.discount.CouponDTO;
+import org.example.discount.DiscountClient;
 import org.example.domain.Product;
-import org.example.dto.CouponDTO;
 import org.example.dto.ProductDTO;
+import org.example.notification.NotificationClient;
+import org.example.notification.NotificationDTO;
 import org.example.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;
-import java.net.URI;
+import java.time.LocalDate;
 import java.util.Optional;
 
 @Service
@@ -22,12 +24,16 @@ public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
     //private final RestTemplate restTemplate;
-    private final RestClient.Builder restClientBuilder;
+   // private final RestClient.Builder restClientBuilder;
+    private final DiscountClient discountClient;
+    private final NotificationClient notificationClient;
 
-    public ProductServiceImpl(ProductRepository productRepository, /*RestTemplate restTemplate,*/ RestClient.Builder restClientBuilder) {
+    public ProductServiceImpl(ProductRepository productRepository, DiscountClient discountClient, NotificationClient notificationClient /*RestTemplate restTemplate, RestClient.Builder restClientBuilder*/) {
         this.productRepository = productRepository;
         //this.restTemplate = restTemplate;
-        this.restClientBuilder = restClientBuilder;
+        //this.restClientBuilder = restClientBuilder;
+        this.discountClient = discountClient;
+        this.notificationClient = notificationClient;
     }
 
     @Override
@@ -37,14 +43,25 @@ public class ProductServiceImpl implements ProductService {
         /*CouponDTO couponDTO = restTemplate.getForObject("http://discount/api/v1/coupon/{code}",
                 CouponDTO.class,
                 productDTO.getDiscountCode());*/
-        CouponDTO couponDTO = restClientBuilder.build().get()
+        /*CouponDTO couponDTO = restClientBuilder.build().get()
                 .uri("http://DISCOUNT/api/v1/coupon/{code}", productDTO.getDiscountCode())
                 .retrieve()
-                .body(CouponDTO.class);
+                .body(CouponDTO.class);*/
+        CouponDTO couponDTO = discountClient.findByCouponCode(product.getDiscountCode());
         BigDecimal subtract = new BigDecimal("100").subtract(couponDTO.getDiscount());
         product.setPrice(subtract.multiply(productDTO.getPrice()).divide(new BigDecimal("100")));
         productDTO.setPrice(product.getPrice());
-        return productRepository.save(product);
+        productRepository.save(product);
+        notificationClient.sendNotification(createNotification());
+        return product;
+    }
+
+    private NotificationDTO createNotification() {
+        NotificationDTO notificationDTO = new NotificationDTO();
+        notificationDTO.setCallerService("product");
+        notificationDTO.setMessage("product saved");
+        notificationDTO.setDate(LocalDate.now());
+        return notificationDTO;
     }
 
     @Override

@@ -1,6 +1,5 @@
-package org.example.dto;
+package org.example.discount;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -8,7 +7,7 @@ import java.time.LocalDate;
 public class CouponDTO {
     private String code;
     private BigDecimal discount;
-    @JsonProperty("date")
+    //@JsonProperty("date")
     private LocalDate localDate;
 
     public String getCode() {
