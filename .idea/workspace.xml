@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e957405-c425-4942-bfb5-c3430442d73b" name="Changes" comment="add product and coupon modules">
-      <change afterPath="$PROJECT_DIR$/discount/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka_service/src/main/java/org/example/EurekaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka_service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka_service/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka_service/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/src/main/java/org/example/dto/CouponDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9e957405-c425-4942-bfb5-c3430442d73b" name="Changes" comment="add ExceptionHandler">
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/org/example/dto/ResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discount/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discount/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discount/src/main/java/org/example/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/discount/src/main/java/org/example/controller/CouponController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discount/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/discount/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/org/example/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/org/example/ProductApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/org/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/org/example/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/org/example/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/org/example/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/org/example/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/org/example/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/org/example/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/org/example/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/org/example/controller/ProductResponseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/org/example/controller/ProductResponseExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,53 +28,53 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2j9FLOpzRX57gmPpMEsaTQwzzZ5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.microservice [package].executor": "Run",
-    "Maven.product [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DiscountApplication.executor": "Run",
-    "Spring Boot.DiscountApplication2.executor": "Run",
-    "Spring Boot.EurekaApplication.executor": "Run",
-    "Spring Boot.ProductApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ehsan/IdeaProjects/anisa-microservice-course/microservice/discount/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservice [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.product [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DiscountApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscountApplication2.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ehsan/IdeaProjects/anisa-microservice-course/microservice/discount/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -149,9 +131,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiscountApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="discount" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=8082" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DiscountApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="discount" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DiscountApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka_service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.EurekaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.EurekaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ProductApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -198,7 +236,11 @@
       <option name="presentableId" value="Default" />
       <updated>1720706885397</updated>
       <workItem from="1720706886633" duration="16371000" />
-      <workItem from="1720791331842" duration="4954000" />
+      <workItem from="1720791331842" duration="5634000" />
+      <workItem from="1721046987267" duration="1105000" />
+      <workItem from="1721129233371" duration="36000" />
+      <workItem from="1721244533955" duration="372000" />
+      <workItem from="1721280154769" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="add product and coupon modules">
       <option name="closed" value="true" />
@@ -208,7 +250,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720715424481</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="RestClient with loadBalance and eureka service">
+      <option name="closed" value="true" />
+      <created>1720796700904</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720796700904</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add ExceptionHandler">
+      <option name="closed" value="true" />
+      <created>1721244771113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721244771113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +274,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add product and coupon modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="add product and coupon modules" />
+    <MESSAGE value="RestClient with loadBalance and eureka service" />
+    <MESSAGE value="add ExceptionHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ExceptionHandler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
