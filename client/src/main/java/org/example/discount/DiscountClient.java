@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient("DISCOUNT")
+@FeignClient(name = "DISCOUNT", fallback = DiscountFallBack.class)
 public interface DiscountClient {
     //
     @GetMapping("/api/v1/coupon/{code}")
